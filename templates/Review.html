@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="/static/fire.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="/review-submit" method="post" id="e-commerce">
+            <div class="alert">Your message sent</div>
+            
+
+            <div class="inputBox">
+                <input type="text" id="name" name="name" placeholder="Your name...." />
+            </div>
+            <div class="inputBox">
+                <input type="text" name="pid" id="pid" value="{{id}}" placeholder="Product ID....." />
+            </div>
+
+            <div class="inputBox">
+                <textarea id="msgContent" name="msgContent" cols="30" rows="10" placeholder="Report"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <!--<script src="/static/fire.js"></script>-->
+</body>
+
+</html>

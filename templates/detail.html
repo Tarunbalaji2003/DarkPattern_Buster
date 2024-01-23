@@ -1,0 +1,114 @@
+<link rel="stylesheet" href="/static/style-prefix.css">
+
+<div class="product-featured" style="position: absolute;top: -15vh;left: -10vh;">
+
+    <div class="showcase-wrapper has-scrollbar">
+
+      <div class="showcase-container" >
+  
+        <div class="showcase">
+          
+          <div class="showcase-banner" >
+            <img src={{img}} alt="shampoo, conditioner & facewash packs" class="showcase-img">
+          </div>
+
+          <div class="showcase-content" >            
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <a href="#">
+              <h3 class="showcase-title">{{title}}</h3>
+            </a>
+
+            <p class="showcase-desc">
+              {{des}}
+            </p>
+
+            <div class="price-box">
+              <p class="price">{{price}}</p>
+
+              <del>{{delprice}}</del>
+            </div>
+
+            <button class="add-cart-btn">add to cart</button>
+
+            <div class="showcase-status">
+              <div class="wrapper">
+                <p>
+                  already sold: <b>20</b>
+                </p>
+
+                <p>
+                  available: <b>40</b>
+                </p>
+              </div>
+
+              <div class="showcase-status-bar"></div>
+            </div>
+
+            <!--<div class="countdown-box">
+
+              <p class="countdown-desc">
+                Hurry Up! Offer ends in:
+              </p>
+
+              <div class="countdown">
+
+                <div class="countdown-content">
+
+                  <p class="display-number">360</p>
+
+                  <p class="display-text">Days</p>
+
+                </div>
+
+                <div class="countdown-content">
+                  <p class="display-number">24</p>
+                  <p class="display-text">Hours</p>
+                </div>
+
+                <div class="countdown-content">
+                  <p class="display-number">59</p>
+                  <p class="display-text">Min</p>
+                </div>
+
+                <div class="countdown-content">
+                  <p class="display-number">00</p>
+                  <p class="display-text">Sec</p>
+                </div>
+
+              </div>-->
+              <a href="/report/{{id}}" style="text-decoration: none;color: black;font-family: 'Poppins',sans-serif;" >Report</a>
+              <a href="/review/{{id}}" style="text-decoration: none;color: black;font-family: 'Poppins',sans-serif;position: absolute;right: 5%;top: 65%;" >Review</a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    <div class="review" style="position: relative;top: 59vh;left: 48%;width: 50%;background: rgb(255, 255, 255);box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;border-radius: 15px;border: 2px solid black;z-index: 3;">
+      <table style="color: rgb(81, 76, 76);width: 100%;height: 40%;padding: 20px 20px;font-size: 1.1rem;font-weight: 530;">
+          <thead>
+      <tr>
+          <td>Comments</td>
+      </tr>
+  </thead>
+  <tbody>
+          {% for record in records %}
+          <tr>
+            <td>{{ record[1].title() }}</td>
+            <td>{{ record[2].title() }}</td>
+          </tr>
+          {% endfor %}
+  </tbody>
+      </table>
+    </div>
+  </div>
