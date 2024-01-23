@@ -16,24 +16,28 @@ E-CAIS is a user friendly chrome extension/app for detecting the use, type and s
 
 
 ## Requirements
+python = "3.9.0"
+requests = "^2.27.1"
+scikit-learn = "^1.0.2"
+torch = "^1.10.2"
+pytest = "^7.0.1"
+matplotlib = "^3.5.1"
+sklearn = "^0.0"
 
 
-- 
-- 
-- 
-- 
-- 
-- 
 ## Tech Stack
+MySql 
+Firebase 
+HTML CSS JS
+Artificial Intellegence 
+Natural Language Processing
 
-**Client:** React
-
-**Server:**  
+ 
 
 
 ## Demo
 
-Insert gif or link to demo
+https://youtu.be/yBB4ZXeBUcI?si=XKBQ4SOWQzpEB9Ab
 
 
 ## Deployment
@@ -41,41 +45,8 @@ Insert gif or link to demo
 To deploy this project run
 
 ```bash
-  uvicorn main1:app 
+  uvicorn main1:app --reload
 
 
 
-## API Reference
-
-#### Get all items
-
-```http
-  GET /api/items
-```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get item
-
-```http
-  GET /api/items/${id}
-```
-
-| Parameter | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
-## Authors
-
-- [@](https://www.github.com/octokatherine)
 
